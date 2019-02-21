@@ -1,0 +1,94 @@
+@import url("https://use.typekit.net/zyj8kbj.css");
+#back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#top {
+  position: absolute;
+  top: 0;
+  right: 45px;
+  line-height: 5rem;
+  height: 45px;
+}
+#top a {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #fff;
+}
+#top a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#back {
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+#back img {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: scale(1.11);
+}
+
+button[type=button] {
+  background: none;
+  border-color: #fff;
+  border-radius: 6pt;
+  border-width: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #fff;
+  height: 40px;
+}
+button[type=button] img {
+  width: 25px !important;
+  height: 25px !important;
+  box-shadow: none !important;
+  margin-top: -5px !important;
+}
+
+#content-container {
+  text-align: center;
+  margin-top: 10%;
+}
+#content-container h1 {
+  font-family: upgrade, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 45px;
+}
+#content-container h3,
+#content-container h4 {
+  font-family: upgrade-lights, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 20px;
+}
+#content-container h4 {
+  margin-top: 20px;
+  font-size: 15px;
+}
+#content-container img {
+  margin-top: 15px;
+  width: 45%;
+  height: 55%;
+  box-shadow: 3px 3px 15px 4px rgba(0, 0, 0, 0.6);
+}
+
+/*# sourceMappingURL=main.css.map */
