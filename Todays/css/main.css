@@ -1,4 +1,28 @@
 @import url("https://use.typekit.net/zyj8kbj.css");
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 #back {
   position: absolute;
   top: 0;
@@ -7,10 +31,69 @@
   height: 100%;
 }
 
+#load {
+  -moz-animation: spin 2s linear infinite;
+  -o-animation: spin 2s linear infinite;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+}
+
+.fader {
+  -moz-animation: fadeIn 2s linear;
+  -o-animation: fadeIn 2s linear;
+  -webkit-animation: fadeIn 2s linear;
+  animation: fadeIn 2s linear;
+}
+
+#hold-load {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: 9998;
+}
+
+#load {
+  width: 200px;
+  height: 200px;
+  left: 45%;
+  top: 45%;
+  position: fixed;
+  z-index: 9999;
 }
 
 #top {
@@ -29,6 +112,14 @@ body {
 #top a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.card {
+  margin: 0;
+}
+
+.card-body p {
+  margin-left: 8px;
 }
 
 #back {
